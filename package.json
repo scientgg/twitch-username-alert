@@ -1,0 +1,15 @@
+{
+  "name": "twitchuserchk",
+  "version": "1.0.0",
+  "description": "twitch username checker",
+  "main": "main.js",
+  "author": "Ronis Xogum <rxogum@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "axios": "^0.24.0",
+    "date-fns": "^2.25.0",
+    "dotenv": "^10.0.0",
+    "nodemailer": "^6.7.0"
+  }
+}
