@@ -35,7 +35,6 @@ const mailAdmin = (subject, text) => {
         })
         .catch(log);
 }
-
 mailAdmin("Iniciando servidor 🖥️✔️", "Servidor iniciado com sucesso!");
 let checkTimeout;
 (function usrChk() {
