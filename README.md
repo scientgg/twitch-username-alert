@@ -1,2 +1,3 @@
-# twitchuserchk
- Twitch Username Checker
+# Twitch Username Alert
+
+Twitch Username Checker (with email alert)
