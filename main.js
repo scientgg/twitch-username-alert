@@ -5,11 +5,16 @@ const nodemailer = require("nodemailer");
 const transporter = nodemailer.createTransport({
   host: process.env.EMAIL_HOST,
   port: process.env.EMAIL_HOST_PORT,
-  secure: /true/i.test(process.env.EMAIL_USE_TLS),
+  secure: true,
   auth: {
+    type: "OAuth2",
     user: process.env.EMAIL_HOST_USER,
-    pass: process.env.EMAIL_HOST_PASSWORD,
-  },
+    clientId: "your google oauth clientId",
+    clientSecret: "oauth clientSecret",
+    refreshToken: "oauth refreshToken",
+    accessToken: "oauth accessToken",
+    expires: 1484314697598,
+    },
 });
 let checkTimeout = null;
 const log = (...args) =>
